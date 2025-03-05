@@ -6,7 +6,7 @@ import os
 app = Flask(__name__)
 
 # Get the absolute path to the corpus.txt file
-file_path = os.path.join(os.getcwd(), 'data', 'corpus.txt')
+file_path = os.path.join(os.path.dirname(__file__), 'backend', 'data', 'corpus.txt')
 
 # Initialize the Markov chain when the server starts
 markov_chain = build_markov_chain(file_path)
