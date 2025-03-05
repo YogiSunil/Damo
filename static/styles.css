@@ -1,0 +1,71 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif !important;
+    background: linear-gradient(-45deg, #ff0000, #00ff00, #0000ff, #ff00ff, #00ffff, #ffff00);
+    background-size: 400% 400%;
+    animation: rgbBG 8s infinite alternate ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    color: #fff;
+    overflow: hidden;
+}
+
+
+/* RGB Gradient Animation */
+@keyframes rgbBG {
+    0% { background-position: 0% 50%; }
+    25% { background-position: 50% 100%; }
+    50% { background-position: 100% 50%; }
+    75% { background-position: 50% 0%; }
+    100% { background-position: 0% 50%; }
+}
+
+blockquote {
+    font-size: 1.8rem;
+    font-weight: 300;
+    font-style: italic;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 20px 30px;
+    border-left: 4px solid #00eaff;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 600px;
+    box-shadow: 0 8px 20px rgba(0, 238, 255, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+blockquote:hover {
+    transform: scale(1.03);
+}
+
+form {
+    margin-top: 30px;
+}
+
+button {
+    background: linear-gradient(135deg, #ff0077, #7700ff);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 5px 15px rgba(255, 0, 119, 0.4);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #7700ff, #ff0077);
+    box-shadow: 0 5px 20px rgba(255, 0, 119, 0.6);
+    transform: scale(1.05);
+}
